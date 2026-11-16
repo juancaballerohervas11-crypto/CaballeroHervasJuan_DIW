@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #f7f4ef;
+  margin: 0;
+}
+
+header {
+  background-color: #c9383f;
+  padding: 1rem;
+}
+
+a {
+  color: #8a1c2b;
+}
+
+header a {
+  color: #fff;
+}
