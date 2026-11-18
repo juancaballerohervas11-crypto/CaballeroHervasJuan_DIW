@@ -17,3 +17,57 @@ a {
 header a {
   color: #fff;
 }
+
+nav a[aria-current="page"] {
+  color: #8a1c2b;   
+  font-weight: bold;
+}
+
+nav a:not([aria-current="page"]) {
+  color: #777;
+}
+
+nav a:not([aria-current="page"]):hover {
+  color: #222;
+}
+
+nav a:not([aria-current="page"]):focus-visible {
+  outline: 3px solid #1f2a44;
+  outline-offset: 2px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 + .card {
+  border: 2px solid #8a1c2b;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #8a1c2b;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+}
+
+.badge:empty {
+  display: none;
+}
+
+article:has(.badge:not(:empty)) {
+  border: 2px solid #c8962e;
+  background-color: #fff8e6;
+}
+
+button[aria-label] {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
